@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- /lec0518/src/main/java/applicationContext2.xml 
+	객체 생성하기 위한 설정 파일
+		->xml 방식
+		->어노테이션 방식으로 변경
+		->자바 Config 방식으로 변경 =>test0518 문제
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 	<context:component-scan base-package="chap03" />
+ 	<!-- chap03 에 있는 component 를 읽어 컨테이너에 저장 -->
+ </beans>
